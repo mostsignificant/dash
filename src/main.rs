@@ -27,7 +27,7 @@ error_chain! {
 #[command(author, version, about, long_about = None)]
 struct Args {
     /// Number of times to greet
-    #[arg(short, long, default_value_t = String::from("./config.yml"))]
+    #[arg(short, long, default_value_t = String::from("./.dash/workflows/config.yml"))]
     config: String,
 }
 
